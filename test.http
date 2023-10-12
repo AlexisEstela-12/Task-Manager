@@ -1,0 +1,36 @@
+POST http://localhost:3000/api/v1/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Make breakfast",
+    "completed": false
+}
+
+###
+POST http://localhost:3000/api/v1/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "do exercise",
+    "completed": false
+}
+###
+GET http://localhost:3000/api/v1/tasks HTTP/1.1
+Content-Type: application/json
+
+###
+
+
+DELETE  http://localhost:3000/api/v1/tasks/65271140fa597b90f06525b9 HTTP/1.1
+Content-Type: application/json
+
+
+###
+
+PATCH http://localhost:3000/api/v1/tasks/652709c5d8bc7201fc201b74 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "testing number 2",
+    "completed" : true
+}
